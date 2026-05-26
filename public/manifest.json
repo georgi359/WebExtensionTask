@@ -1,0 +1,24 @@
+{
+    "manifest_version": 3,
+    "name": "Web Extension Task",
+    "version": "1.0.0",
+    "description": "A simple cat web extension task.",
+    "permissions": [
+        "activeTab"
+    ],
+    "host_permissions": [
+        "https://*/*",
+        "http://*/*"
+    ],
+    "icons": {
+        "48": "/react.png",
+        "128": "/react.png"
+    }, 
+    "action": {
+        "default_popup": "index.html",
+        "default_icon": {
+        "48": "/react.png",
+        "128": "/react.png"
+        }
+    }
+}
