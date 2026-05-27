@@ -1,6 +1,6 @@
-import type { CatResponse } from "../types/catResponse";
+import type { FetchResponse } from "../types/fetchResponse";
 
-export async function fetchRandomCat(): Promise<CatResponse> {
+export async function fetchRandomCat(): Promise<FetchResponse> {
   try {
     const catApiUrl = "https://cataas.com/cat";
     const timestamp = new Date().getTime();

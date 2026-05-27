@@ -1,6 +1,6 @@
-import type { CatResponse } from "../types/catResponse";
+import type { FetchResponse } from "../types/fetchResponse";
 
-export async function fetchRandomImage(): Promise<CatResponse> {
+export async function fetchRandomImage(): Promise<FetchResponse> {
   try {
     const apiUrl = "https://dog.ceo/api/breeds/image/random";
     const timestamp = new Date().getTime();

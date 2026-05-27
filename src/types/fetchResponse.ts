@@ -1,4 +1,4 @@
-export interface CatResponse {
+export interface FetchResponse {
   success: boolean;
   imageUrl?: string;
   time?: number;
