@@ -35,7 +35,7 @@ jobs:
         uses: softprops/action-gh-release@v2
         with:
           tag_name: manual-release-${{ github.run_number }}
-          name: Manual Release ${{ github.run_number }}
+          name: WebExtension${{ github.run_number }}
           files: extension.zip
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
