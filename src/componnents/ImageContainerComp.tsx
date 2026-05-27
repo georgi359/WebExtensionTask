@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import { fetchRandomCat } from "../services/catFetchService";
 //import {fetchRandomImage} from "../services/jsonFetchService";
 import { DateTimeHelper } from "../helpers/dateTimeHelper";
-// import "../App.css";
+import "./ImgContainerComp.css";
 
 export function ImageContainerComp() {
   const [catImageUrl, setCatImageUrl] = useState<string | null>(null);
