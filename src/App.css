@@ -57,9 +57,11 @@
 }
 
 .cat-image {
-  max-width: 55%;
-  max-height: 240px;
+  width: 240px;
+  height: 240px;
+  object-fit: contain;
   border-radius: 12px;
+  border: 1px solid var(--border);
 }
 
 #center {
