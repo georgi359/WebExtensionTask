@@ -2,8 +2,9 @@ import type { CatResponse } from "../types/catResponse";
 
 export async function fetchRandomCat(): Promise<CatResponse> {
   try {
+    const catApiUrl = "https://cataas.com/cat";
     const timestamp = new Date().getTime();
-    const response = await fetch(`https://cataas.com/cat`, {
+    const response = await fetch(catApiUrl, {
       method: "GET",
       cache: "no-store",
       mode: "cors",
@@ -25,7 +26,9 @@ export async function fetchRandomCat(): Promise<CatResponse> {
     return {
       success: false,
       error:
-        error instanceof Error ? error.message : "Failed to fetch cat image.",
+        error instanceof Error
+          ? `Failed to fetch cat image: ${error.message}`
+          : "Failed to fetch cat image.",
     };
   }
 }

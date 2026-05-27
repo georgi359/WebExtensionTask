@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import { fetchRandomCat } from "../services/catFetchService";
+//import {fetchRandomImage} from "../services/jsonFetchService";
 import { DateTimeHelper } from "../helpers/dateTimeHelper";
 // import "../App.css";
 
@@ -21,6 +22,7 @@ export function ImageContainerComp() {
     setLoading(true);
     setError(null);
 
+    //const result = await fetchRandomImage();
     const result = await fetchRandomCat();
     setLoading(false);
 
